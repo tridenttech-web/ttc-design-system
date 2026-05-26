@@ -1,9 +1,5 @@
 @import "tailwindcss";
-
-@theme {
-  --color-brand-primary: #001e60;
-  --color-brand-secondary: #ffb500;
-}
+@import "./tokens.css";
 
 .csv-grid-cell:focus {
   outline: 3px solid currentColor;

@@ -5,6 +5,7 @@
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
+    "build:tokens": "node scripts/build-tokens.mjs",
     "test": "vitest",
     "test-storybook": "vitest --project=storybook"
   },
@@ -14,12 +15,15 @@
     "@storybook/addon-vitest": "^10.3.5",
     "@storybook/web-components-vite": "^10.3.5",
     "@tailwindcss/vite": "^4.2.4",
+    "@vitest/browser-playwright": "^4.1.5",
+    "@vitest/coverage-v8": "^4.1.5",
+    "playwright": "^1.59.1",
     "storybook": "^10.3.5",
     "tailwindcss": "^4.2.4",
     "vite": "^8.0.10",
-    "vitest": "^4.1.5",
-    "playwright": "^1.59.1",
-    "@vitest/browser-playwright": "^4.1.5",
-    "@vitest/coverage-v8": "^4.1.5"
+    "vitest": "^4.1.5"
+  },
+  "dependencies": {
+    "style-dictionary": "^5.4.1"
   }
 }
