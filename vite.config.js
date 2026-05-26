@@ -19,9 +19,11 @@ export default defineConfig({
       storybookTest({
         configDir: path.join(dirname, '.storybook'),
         storybookScript: 'npm run storybook -- --no-open'
-      })],
+      })
+    ],
       test: {
         name: 'storybook',
+        setupFiles: ['.storybook/vitest.setup.js'],
         browser: {
           enabled: true,
           headless: true,
