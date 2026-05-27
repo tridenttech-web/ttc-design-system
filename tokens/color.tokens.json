@@ -11,6 +11,9 @@
           "600": { "value": "#631f27" },
           "700": { "value": "#42181c" }
         },
+        "wildhorse": {
+          "manepink": { "value": "#f55f50" }
+        },
         "secondary": {
           "DEFAULT": { "value": "#001e60" },
           "100": { "value": "#f1efff" },

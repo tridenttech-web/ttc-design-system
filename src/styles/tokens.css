@@ -7,6 +7,7 @@
   --color-fill-primary-600: #631f27;
   --color-fill-primary-700: #42181c;
   --color-fill-primary-default: #862633;
+  --color-fill-wildhorse-manepink: #f55f50;
   --color-fill-secondary-100: #f1efff;
   --color-fill-secondary-200: #b8b5d5;
   --color-fill-secondary-300: #817ead;
@@ -98,7 +99,7 @@
   --radius-sm: 0.25rem;
   --radius-md: 0.5rem;
   --radius-lg: 0.75rem;
-  --font-family-sans: Inter, Arial, sans-serif;
+  --font-family-sans: Fira Sans, system-ui, sans-serif;
   --font-family-serif: Georgia, serif;
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;

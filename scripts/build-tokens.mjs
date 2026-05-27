@@ -9,6 +9,12 @@ StyleDictionary.registerFormat({
         return `@theme inline {\n${vars}\n}\n`;
     }
 })
+StyleDictionary.registerFileHeader({
+    name: 'tokenGenerated',
+    fileHeader: (defaultMessage) => {
+        return [...defaultMessage, `Made with care from the Trident Technical College Web Team`]
+    }
+})
 
 const sd = new StyleDictionary({
     source: ['tokens/*.tokens.json'],
@@ -19,7 +25,10 @@ const sd = new StyleDictionary({
             files: [
                 {
                     destination: 'tokens.css',
-                    format: 'css/tailwind-theme'
+                    format: 'css/tailwind-theme',
+                    options: {
+                        fileHeader: "tokenGenerated"
+                    }
                 }
             ]
         }
