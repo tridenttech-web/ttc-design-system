@@ -1,2 +1,5 @@
 node_modules
 .DS_Store
+debug-storybook.log
+storybook-static/
+wackyfile.dontshowinternet
