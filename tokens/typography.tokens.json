@@ -1,7 +1,7 @@
 {
   "font": {
     "family": {
-      "sans": { "value": "Inter, Arial, sans-serif" },
+      "sans": { "value": "Fira Sans, system-ui, sans-serif" },
       "serif": { "value": "Georgia, serif" }
     },
     "size": {
