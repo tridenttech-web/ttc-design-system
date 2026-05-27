@@ -4,10 +4,10 @@
   "type": "module",
   "scripts": {
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "build:storybook": "storybook build",
     "build:tokens": "node scripts/build-tokens.mjs",
     "test": "vitest",
-    "test-storybook": "vitest --project=storybook"
+    "test:storybook": "vitest --project=storybook"
   },
   "devDependencies": {
     "@storybook/addon-a11y": "^10.3.5",
