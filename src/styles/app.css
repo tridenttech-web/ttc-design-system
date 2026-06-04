@@ -10,3 +10,42 @@
   outline: 3px solid currentColor;
   outline-offset: -3px;
 }
+@layer components {
+  .progressive-hover {
+    position: relative;
+    overflow: hidden;
+
+    --ph-color: #3b82f6;       /* blue-500 */
+    --ph-track-color: #d1d5db; /* gray-300 */
+    --ph-height: 3px;
+    --ph-duration: 0.4s;
+  }
+
+  .progressive-hover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: var(--ph-height);
+    background: var(--ph-track-color);
+  }
+
+  .progressive-hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: var(--ph-height);
+    background: var(--ph-color);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform var(--ph-duration) ease;
+  }
+
+  .progressive-hover:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
